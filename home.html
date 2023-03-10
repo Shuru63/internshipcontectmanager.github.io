@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect Manager</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="img/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Oswald&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+
+        <section class="middle">
+            <div class="contect-head">
+                <i class="fa-solid fa-user"></i>
+                <h1> Contect Manager</h1>
+            </div>
+            <ul class="image">
+                <li><a href="#contactform"><i class="fa-solid fa-address-book"></i>Contact Form
+                <li><a href="#list"> <i class="fa-solid fa-clipboard-list"></i>Contact List </a></l1>
+            </ul>
+        </section>
+        <section class="display">
+            <div>
+                <form class="form" id="contactform" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div class="up">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Enter the Details</h1>
+                    </div>
+                    <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                    <input type="text" placeholder="Enter Full Name" name="fullname" id="fullname">
+                    <label for="Email">Email:</label>
+                    <input type="email" placeholder="Enter email" name="email" id="email">
+                    <label for="mobile number">Mobile number:</label>
+                    <input type="number" placeholder="000000000" id="number">
+                    <div class="button"> <button type="submit">Submit</button>
+                    </div>
+                    <div  class="note"> <p>Note : Click on contact list </p>
+                    <p>becouse save the in contact list</p></div>
+                </form>
+            </div>
+            <div>
+                <div class="form" id="list">
+                    <div class="up">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Contect List</h1>
+                    </div>
+                    <table id="listdetails">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>mobile no.</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                    <div class="note"> <p>Note : Click on contact form
+                        <br>becouse fetch the data for edit  in contect form</p></div>
+                </div>
+            </div>
+            <div>
+                
+        
+        </section>
+
+    </section>
+    <script src="home.js"></script>
+</body>
+
+</html>
